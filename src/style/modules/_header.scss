@@ -1,0 +1,141 @@
+.full-header{
+	position: relative;
+	z-index: 9999;
+}
+
+.b_top_bar{
+	background: $darkblue;
+	height: 40px;
+	padding-top: 10px;
+	.forget_password{
+		text-decoration: underline;
+		&:hover{
+			color: $darkblue;
+		}
+	}
+	a{
+		color: #aeaeae;
+		font-size: 12px;
+		text-decoration: none;
+		&:hover{
+			color: #FFF;
+		}
+	}	
+}
+
+.b_top_bar__phone{
+	@include span(2 of 12);
+	.icon{
+		display: inline-block;
+		margin-right: 5px;
+	}	
+}
+
+.phone_number{
+	color: #aeaeae;
+}
+
+.b_top_bar__sub_nav{
+	@include span(6 of 12);
+}
+
+.sub_nav{
+	padding-bottom: 10px;
+}
+
+.sub_nav__item{
+	float: left;
+	margin-left: 30px;
+}
+
+.b_top_bar__login{
+	@include span(4 of 12);
+	.login_details{
+		float: right;
+	}
+}
+
+.login_top{
+	&:before{
+		content: '';
+		display: inline-block;
+		@extend .icon-login;
+		margin-right: 5px;
+	}
+	// &:hover::before{
+	// 	@extend .icon-login-hover;						
+	// }	
+}
+
+
+.register_top{
+	margin-left: 15px;
+	&:before{
+		content: '';
+		display: inline-block;
+		@extend .icon-register;
+		margin-right: 5px;	
+	}
+	// &:hover::before{
+	// 	background-position:-149px -197px;				
+	// }	
+		
+}
+
+
+// PRIMARY HEADER
+
+.b_primary_header{
+	position: relative;
+	background: #FFF;
+	height: 115px;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+.b_primary_header__logo{
+	@include span(1 of 12);
+	padding-top: 22px;
+	height: 115px;
+}
+
+// Navigation
+
+.b_primary_header__main_nav{
+	@include span(11 of 12);
+}
+
+.site_nav_item{
+	a{
+		text-decoration: none;
+		color:$darkblue;
+		padding-top: 30px;
+		padding-bottom: 36px;
+		float: left;
+		width: 14.28%;
+		text-align: center;
+		font-weight: bolder;
+		max-height: 115px;
+		text-transform: uppercase;
+		font-family: $haasbold;
+		&:after{
+			content: '';
+			display: block;
+			border-right: 1px solid #f3f3f3;
+			width: 0;
+			height: 115px;
+			position: absolute;
+			top:0;
+		}
+		&:hover{
+			background: #f5f5f5;
+			transition: all 0.1s ease;
+			border-bottom: 3px solid #db484d;
+		}
+	}
+}
+
+
+//Login
+.login_link{
+	float: left;
+}

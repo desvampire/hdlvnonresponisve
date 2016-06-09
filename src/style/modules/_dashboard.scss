@@ -1,0 +1,350 @@
+#dashboard{
+	background: $grey-main;
+	min-height: 1000px;
+}
+
+#dasboard-content{
+	margin-top: 25px;
+}
+
+#dashboard-navigation{
+	margin-top: 25px;
+}
+// -------------------------------------------------   
+//          Header - nav
+// -------------------------------------------------
+.cab-nav--user{
+	padding: 15px 15px 15px 30px;
+}
+
+.cab-nav--user_ava{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	border: 1px solid $grey-main;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	.user-avatar{
+		border-radius: 50%;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;	
+		left: 4px;
+		width: 90px;
+	    height: 90px;
+	    position: absolute;
+	    top: 50%;
+	    margin-top: -45px;
+	}
+}
+
+.cab-nav--user_name{
+	span{
+		font-size: 16px;
+	}
+}
+
+.cab-nav{
+	background: #FFF;
+}
+
+.cab-nav--links{
+	li{
+		position: relative;
+		a{
+			padding: 15px 15px 15px 30px;
+			display: block;
+			color: $darkblue;
+			font-family: $haasbold;
+			&:hover{
+				.dropdown-icon{
+					border-color: $red transparent transparent transparent;
+				}
+				}
+			.dropdown-icon{
+				float: right;
+				margin-top: 11px;
+
+			}
+			span{
+				margin-right: 10px;
+			}
+			&:hover{
+				color: $red;
+				background: $grey-main;
+			}
+		}
+	}
+	ul{
+		display: none;
+		li{
+			a{
+				font-family: $haasreg;
+			}
+		}
+	}
+	.active-dropdown{
+		.dropdown-icon{
+		-ms-transform: rotate(180deg); /* IE 9 */
+		-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+		transform: rotate(180deg);
+		}
+	}
+	.cab-nav--links-active{
+		a{
+			color: $red;
+			background: $grey-main;
+		}
+	}
+	.cab-nav--notification{
+	    min-width: 24px;
+	    position: absolute;
+	    top: 10px;
+	    right: 0;
+	    background: #db484d;
+	    color: #FFF;
+	    padding: 0 7px 2px;
+	    font-size: 10px;
+	    border-radius: 25px;
+	    text-align: center;
+		font-family: $haasreg;
+	}
+}
+
+.cab-nav--chart-category{
+	a{
+		text-overflow: ellipsis;
+		white-space: nowrap;
+    	overflow: hidden;
+	}
+}
+
+.cab-nav-dropdown--divider{
+	font-size: 12px;
+	color: #d5d5d5;
+	padding: 5px 15px 5px 30px;
+}
+
+
+.js-fixed--cab-nav--links{
+	margin-top: 0;
+	transition: all 0.3s ease-in;
+}
+
+// -------------------------------------------------   
+//          Cabinet sections
+// -------------------------------------------------
+
+.cab-section--title{
+	background: #FFF;
+	padding: 15px 25px;
+	border-bottom: 1px solid $grey-main;
+	h3{
+		margin: 0;
+	}
+}
+
+.cab-section{
+	background: #FFF;
+	padding: 25px;
+	margin-bottom: 25px;
+}
+
+.row--cab-section--mright{
+	&:before{
+	    content: " ";
+	    display: block;
+	    clear: both;		
+	}	
+	&:after{
+	    content: " ";
+	    display: block;
+	    clear: both;		
+	}
+	.cab-section--mright{
+		&:nth-last-child(1){
+			margin-right: 0;
+		}
+	}
+}
+
+.cab-section--mright{
+	background: #FFF;
+	padding: 25px;
+	margin-top: 25px;
+	margin-right: 25px;
+}
+
+.rave-chart-actions--list{
+	li{
+		padding: 7px 5px;
+		&:hover{
+			background: $grey-main;
+		}
+		a{
+			color: $darkblue;
+		}
+	}
+}
+// -------------------------------------------------   
+//          1-2-3
+// -------------------------------------------------
+
+.def-number--round{
+	background: $grey-main;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	width: 40px;
+	height: 40px;
+	float: left;
+	text-align: center;
+	margin-right: 7px;
+	font-size: 24px;
+	font-family: $haasbold;
+}
+
+.def-value{
+	margin: 0 0 20px;
+	font-family: $haasreg;
+	font-weight: 100;
+	font-size: 18px;
+}
+
+.def-block{
+	min-height: 355px;
+}
+
+// -------------------------------------------------   
+//          Consultations
+// -------------------------------------------------
+
+.consult-table{
+	border: 1px solid $grey-main;
+	height: 325px;
+	position: relative;
+}
+
+.consult-table--name{
+	background: $grey-main;
+	padding: 13px 0 13px;
+	text-align: center;
+	h4{
+		margin: 0;
+	}
+}
+
+.consult-table--options{
+	background: #FFF;
+	padding: 12px 25px; 
+	ul{
+		li{
+			margin-bottom: 12px;
+		}
+	}
+}
+
+.consult-table--choose-btn{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	.btn{
+		display: block !important;
+	}
+}
+
+.consult-table--popular{
+	border: 1px solid $grey-main;
+	position: relative;
+	margin-top: -80px;
+    height: 405px;
+}
+
+.consultations-types{
+	padding-top: 100px;
+}
+
+// -------------------------------------------------   
+//          Courses
+// -------------------------------------------------
+
+.lesson-card{
+	border: 1px solid $grey-main;
+	max-width: 392px;
+}
+
+.lesson-card--desc{
+	background: #FFF;
+	padding: 0 12px 12px;
+}
+
+// -------------------------------------------------   
+//          User settings
+// -------------------------------------------------
+
+.user-main-settings{
+	max-width: 455px;
+}
+
+// -------------------------------------------------   
+//          Ravecharts catalog
+// -------------------------------------------------
+#user-ravecharts{
+	width: 100%;
+	thead{
+		background: $red;
+		color: #FFF;
+		th{
+			padding: 10px;
+			cursor: pointer;
+			border-right: 1px solid $grey-main;
+			font-weight: 400;
+			text-align: left;
+			span{
+				    float: right;
+				    margin-top: 10px;
+			}
+		}
+	}
+	tr{		
+		td{
+			padding: 10px;
+			cursor: pointer;
+			border-right: 1px solid $grey-main;
+		}
+	}
+	.user-ravechart--person{
+		border-bottom: 1px solid $grey-main;
+		&:hover{
+			background: $grey-main;
+		}
+	}
+	tbody{
+		border: 1px solid $grey-main;
+	}
+}
+
+
+// -------------------------------------------------   
+//          Create new ravechart
+// -------------------------------------------------
+.add-user-new_ravechart{
+	max-width: 400px;
+}
+
+.add-new-category{
+	a{
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+
+#selected-category{
+	background: #f0f0f0;
+	padding: 4px 7px;
+	font-family: $haasbold;
+}
+
+#print_frame{
+    display: none;
+}

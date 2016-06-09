@@ -1,0 +1,344 @@
+// Layout settings
+
+$susy: (
+  columns: 12,
+  gutters: .25,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  //   debug: (
+  //   image: show,
+  //   color: rgba(#66f, .25),
+  //   toggle: top,
+  // ),
+);
+
+//Turn-on debug
+  // debug: (
+  //   image: show,
+  //   color: rgba(#66f, .25),
+  //   toggle: top ,
+  // ),
+
+html{
+	height: 100%;
+}
+
+.container{
+	@include container(1800px);
+}
+
+#b_page{
+	min-height:100%;
+	position:relative;	
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.b_primary_content{
+	padding-bottom: 425px;
+}
+
+
+// Columns
+.col-12{
+	box-sizing: border-box;
+	width: 100%;
+	padding-left: 0.83333%;
+	padding-right: 0.83333%;
+}
+
+.col-11{
+	@include span(11 of 12);
+}
+
+.col-10{
+	@include span(10 of 12);
+}
+
+.col-9{
+	@include span(9 of 12);
+}
+
+.col-8{
+	@include span(8 of 12);
+}
+
+.col-7{
+	@include span(7 of 12);
+}
+
+.col-6{
+	@include span(6 of 12);
+}
+
+.col-5{
+	@include span(5 of 12);
+}
+
+.col-4{
+	@include span(4 of 12);
+}
+
+.col-3{
+	@include span(3 of 12);
+}
+
+.col-2{
+	@include span(2 of 12);
+}
+
+.col-1{
+	@include span(1 of 12);
+}
+
+.offset-1{
+	@include push(1 of 12);
+}
+
+.offset-2{
+	@include push(2 of 12);
+}
+
+.offset-3{
+	@include push(3 of 12);
+}
+
+.offset-4{
+	@include push(4 of 12);
+}
+
+.offset-5{
+	@include push(5 of 12);
+}
+
+.offset-6{
+	@include push(6 of 12);
+}
+
+.offset-7{
+	@include push(7 of 12);
+}
+
+.offset-8{
+	@include push(8 of 12);
+}
+
+.offset-9{
+	@include push(9 of 12);
+}
+//Tables grid
+.table{
+	display: table;
+}
+
+.table-one-half{
+	width: 50%;
+	display: table-cell;
+}
+
+.table-one-third{
+	width: 30%;
+	display: table-cell;
+} 
+
+.v-middle{
+	vertical-align: middle;
+}
+
+// Base styles for some elements
+
+.no-list{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.line-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li{
+		&:before{
+			content: '- ';
+
+		}
+	}
+}
+
+.row{
+	&:before{
+	    content: " ";
+	    display: block;
+	    clear: both;		
+	}	
+	&:after{
+	    content: " ";
+	    display: block;
+	    clear: both;		
+	}
+}
+
+.b_bordered-text{
+	margin: 20px 0 20px;
+	padding: 0 15px;
+	border: 1px dashed $darkblue;
+	@include border-radius(3px);
+}
+
+// SVG Icons
+
+.nav_icon {
+	margin: 0 auto;
+	display: block;
+	fill: #9e9e9e;
+}
+
+.icon-bulb19{
+	width: 32px;
+	height: 32px;
+}
+
+.icon-calendar-icons{
+	width: 22px;
+	height: 32px;
+}
+
+.icon-graduation1{
+	width: 32px;
+	height: 32px;	
+}
+
+.icon-book201{
+	width: 23px;
+	height: 32px;	
+}
+
+.icon-message31{
+	width: 32px;
+	height: 32px;
+}
+
+.icon-socialnetwork156{
+	width: 32px;
+	height: 32px;	
+}
+
+.icon-rave_icon{
+width: 25px;
+height: 32px;
+stroke: #9E9E9E;
+stroke-width: 40px;
+}
+
+// Sprite Icons
+.icon{
+	display: inline-block;
+}
+
+.icon { background: url('../img/sprite/sprite.png') no-repeat top left; width: 19px; height: 19px;  } 
+.icon.chart-catalog { background-position: 0 0; width: 13px; height: 11px; } 
+.icon.charts { background-position: 0 -21px; width: 18px; } 
+.icon.cog { background-position: 0 -50px; width: 20px; height: 20px; } 
+.icon.envelope { background-position: 0 -80px; height: 15px; } 
+.icon.feedback { background-position: 0 -105px; } 
+.icon.home { background-position: 0 -134px; width: 17px; height: 16px; } 
+.icon.notification { background-position: 0 -160px; } 
+.icon.printer { background-position: 0 -189px; width: 16px; height: 16px; } 
+.icon.save { background-position: 0 -215px; width: 15px; height: 15px; } 
+.icon.sendemail { background-position: 0 -240px; width: 16px; height: 16px; } 
+.icon.user { background-position: 0 -266px; width: 17px; } 
+
+// Css icons
+
+.dropdown-icon{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 4px 4.5px 0 4.5px;
+}
+
+.dropdown-icon--dark{
+	border-color: #2b2d34 transparent transparent transparent;
+}
+
+.dropdown-icon--white{
+	border-color: #FFF transparent transparent transparent;
+}
+
+.dropdown-icon--red{
+	border-color: $red transparent transparent transparent;
+}
+
+.icon-plus {
+	display: inline-block;
+width: 15px;
+height: 15px;
+position: relative;
+top:0;
+left:0;
+}
+.icon-plus:after {
+background-color: #d5d5d5;
+width: 8px;
+height: 2px;
+position: absolute;
+top:7px;
+left: 1px;
+  content:"";
+}
+.icon-plus:before {
+background-color: #d5d5d5;
+width: 2px;
+height: 8px;
+position: absolute;
+top:4px;
+left: 4px;
+  content:"";
+}
+
+.icon-circle{
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: transparent;
+	border: 2px solid #d5d5d5;
+}
+
+// Utilities
+.visible{
+	display: block !important;
+	visibility: visible;
+}
+
+.responsive-img{
+	max-width: 100%;
+}
+
+.float-left{
+	float: left;
+	margin: 0 15px 15px 0;
+}
+
+.ib{
+	display: inline-block;
+}
+
+.img-round{
+	border-radius: 50%;
+}
+
+.site-content{
+	margin-top: 25px;
+}
+
+.white-bg{
+	background: #FFF !important;
+}
+
+.no-top-margin{
+	margin-top: 0;
+}
